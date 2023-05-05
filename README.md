@@ -10,7 +10,7 @@
 
 ## Project Description <a name="project_description"><a>
 
-The purpose of this app is to assist store managers to manage inventory in their shoe warehouse. Store managers are able to view the the inventory across all warehouses internationally and to perform inventory related tasks such as: stock taking, viewing all inventory on hand across all warehouses, searching for specific shoes for details, view the value of inventory on hand, to identify which shoes need to be restocked and capturing new stock.
+The purpose of this app is to assist store managers to manage inventory for a shoe warehouse. Store managers are able to view the the inventory across all warehouses internationally and to perform inventory related tasks such as: stock taking, viewing all inventory on hand across all warehouses, searching for specific shoes for details, viewing the value of inventory on hand, identifying which shoes need to be restocked and capturing new stock.
 
 ## Installation <a name="installation"><a> 
 
@@ -88,7 +88,7 @@ docker run -i bonolor/inventory-app
 
 ## Usage <a name="usage"><a>
 
-1. The menu provides various options from which you can select:
+1. The menu provides various options from which you can select.
 
 <img width="1021" alt="Screenshot 2023-05-05 at 15 15 22" src="https://user-images.githubusercontent.com/127111801/236467778-5d177775-7701-4dd4-aba1-fac1b3b33153.png">
 
@@ -132,8 +132,39 @@ docker run -i bonolor/inventory-app
 <img width="1021" alt="Screenshot 2023-05-05 at 15 55 27" src="https://user-images.githubusercontent.com/127111801/236477756-8956fabb-1aaf-4402-ada7-3c4eb5813e53.png">
 
 8. Exit the system by selecting "7".
+  
+  <img width="1021" alt="Screenshot 2023-05-05 at 15 57 25" src="https://user-images.githubusercontent.com/127111801/236478384-dfe02e13-b987-4237-bd3e-7bb76c73ce13.png">
+  
+ ### Error Handling for Inventory App
+  
+The program will notify if there are errors with the inputs entered that make the inputs invalid. In these instances, follow the prompts provided and try again to re-enter valid inputs.
+  
+ The following is the list of invalid input situations with the associated images of the prompts that you will see: 
+  
+  1. If you enter any value that is not one of the menu option numbers available.
+  
+  <img width="1021" alt="Screenshot 2023-05-05 at 16 20 04" src="https://user-images.githubusercontent.com/127111801/236484423-e9f50dc7-282c-4624-97dc-2861f18e80a8.png">
+  
+  2. If you enter an invalid code for the SKU when capturing a new shoe.
+  
+<img width="1021" alt="Screenshot 2023-05-05 at 16 35 38" src="https://user-images.githubusercontent.com/127111801/236488376-371ecd52-4480-4f10-a8e6-bc53d4ebddd7.png">
+  
+  3. If you enter an negative number or a value that is not a number for the shoe cost when you capture a new shoe.
+  
+  <img width="1021" alt="Screenshot 2023-05-05 at 16 37 21" src="https://user-images.githubusercontent.com/127111801/236488829-e2d9a462-329a-4eab-8e9a-85d9054bf89c.png">
 
-<img width="1021" alt="Screenshot 2023-05-05 at 15 57 25" src="https://user-images.githubusercontent.com/127111801/236478384-dfe02e13-b987-4237-bd3e-7bb76c73ce13.png">
+   4. If you enter an negative number or a value that is not a number for the shoe quantity when you capture a new shoe.
+
+<img width="1021" alt="Screenshot 2023-05-05 at 16 43 44" src="https://user-images.githubusercontent.com/127111801/236490442-2c2c53ac-b90f-4f79-a1b5-23b7d7ba67ce.png">
+
+  5. When determining which shoe to restock, if you enter an input that is not a "yes" or "no" to the question of whether you would like to restock the inventory items shown with the lowest quantity.
+  
+  <img width="1021" alt="Screenshot 2023-05-05 at 16 45 11" src="https://user-images.githubusercontent.com/127111801/236491162-f7f92325-e686-4f79-a8ac-ba571cdaf0e0.png">
+  
+  6. If you enter an invalid SKU when searching for a shoe.
+  
+  <img width="1021" alt="Screenshot 2023-05-05 at 16 47 32" src="https://user-images.githubusercontent.com/127111801/236491533-f0705fef-026a-499d-a9a8-4c7909cf1b1e.png">
+
 
 ## Credit and Contribution <a name="credit_and_contribution"><a> 
 
